@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  phalcon:
+    build:
+      dockerfile: Dockerfile
+    image: bahadirbirsoz/phalcon-php:8.2
+
