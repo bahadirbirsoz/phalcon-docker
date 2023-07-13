@@ -1,7 +1,11 @@
 version: "3.8"
 services:
-  phalcon:
+  fpm-bullseye:
     build:
-      dockerfile: Dockerfile
-    image: bahadirbirsoz/phalcon-php:8.2
+      dockerfile: fpm.Dockerfile
+    image: bahadirbirsoz/phalcon-php:8.2.8-fpm
+  bullseye:
+    build:
+      dockerfile: cli.Dockerfile
+    image: bahadirbirsoz/phalcon-php:8.2.8-cli
 
